@@ -35,8 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void openALink(View view) {
-        Uri uri = Uri.parse("http://" + tvHomepage.getText().toString() + "/");
-        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://" + tvHomepage.getText().toString() + "/"));
         startActivity(i);
     }
 }

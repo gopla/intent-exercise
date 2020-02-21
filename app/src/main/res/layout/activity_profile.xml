@@ -18,8 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.25"
-            />
+            app:layout_constraintGuide_percent="0.29" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image_profile"
@@ -131,8 +130,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/separator2"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator2" />
 
         <TextView
             android:id="@+id/label_email"
@@ -164,7 +162,7 @@
 
         <TextView
             android:id="@+id/title_homepage"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"

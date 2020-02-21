@@ -38,12 +38,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (conPass.equals(password)){
             if (validate){
+                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
                 User user = new User(fullName, email, password, homepage, about);
                 Intent i = new Intent(this, ProfileActivity.class);
                 i.putExtra("data",user);
                 startActivity(i);
             }else {
-                Toast.makeText(this, "Fill all data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Fill all data!", Toast.LENGTH_SHORT).show();
             }
         }else{
             Toast.makeText(this, "Password doesn't match!", Toast.LENGTH_SHORT).show();
